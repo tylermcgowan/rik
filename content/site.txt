@@ -1,9 +1,17 @@
-Title: Kirby
+﻿Title: rik writes
+
 ----
-Author: Bastian Allgeier
+
+Author: Cedar Made (change this)
+
 ----
-Description: Kirby is awesome
+
+Description: rik writes things; sometimes for himself, but mostly for others. These are some things that rik writes.
+
 ----
+
 Keywords: kirby, cms, kirbycms, php, filesystem
+
 ----
-Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Bastian Allgeier)
+
+Copyright: ©2009-(date: Year) (link: rikwrites.com text: don't be a dick)
