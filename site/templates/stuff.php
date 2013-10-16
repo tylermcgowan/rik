@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
+<?php snippet('rik') ?>
 
 <section class="content">
 

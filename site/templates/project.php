@@ -1,15 +1,17 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
-<?php snippet('submenu') ?>
 
 <section class="content">
-
   <article>
-    <h1><?php echo html($page->title()) ?></h1>
-    <?php echo kirbytext($page->intro()) ?>
+	  <h3 class="project-title"><?php echo html($page->title()) ?></h3>
+    <h2 class="intro"><?php echo kirbytext($page->intro()) ?></h2>
     <?php echo kirbytext($page->text()) ?>
   </article>
+</section>
 
+<section class="projectlist">
+	<?php snippet('menu') ?>
+	<?php snippet('rik') ?>	
+	<?php snippet('submenu') ?>
 </section>
 
 <?php snippet('footer') ?>
