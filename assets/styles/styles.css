@@ -1,3 +1,7 @@
+/*--------------
+  General
+----------------*/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,17 +12,18 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
+  font: normal 62.5%/1.4 "adelle",serif;
   background: #fff;
   color: #777;
-  width: 450px;
-  margin: 50px auto;
+  font-weight: 400;
+  /*width: 450px;*/
+  /*margin: 50px auto;*/
 }
 a {
   color: #222;
   text-decoration: none;
+  -webkit-transition: color .25s ease;
+  transition: color .25s ease;
 }
 a,
 a:hover,
@@ -33,6 +38,10 @@ img {
   outline: 0;
   border: 0;
 }
+/*--------------
+  Typography
+----------------*/
+
 h1 {
   font-size: 28px;
   line-height: 40px;
@@ -45,6 +54,19 @@ h2 {
   color: red;
   margin-bottom: 21px;
 }
+h2.tagline{
+  font-size: 2.1em;
+  font-style: italic;
+  color: white;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-left: 1.6em;
+}
+h2.intro{
+  font-size: 3.2em;
+  margin-bottom: 1.2em;
+  font-weight: 300;
+}
 h3 {
   font-weight: normal;
   font-size: 20px;
@@ -56,19 +78,116 @@ h4 {
   font-weight: normal;
 }
 p {
-  margin-bottom: 20px;
+  font-size: 1.8em;
+  margin-bottom: 1.2em;
 }
-nav {
+
+/*--------------
+  Page
+----------------*/
+.row {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.row h3, .row h3.project-title, .row h2.intro, .row p {
+  margin-right: auto;
+  margin-left: auto;
+  width: 65%;
+}
+h3.project-title{
+  font-family: "runda", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  text-transform: lowercase;
+  margin-bottom: 3em;
+}
+.gradient {
+  width: 100%;
+  background-color: rgb(234,74,51);
   overflow: hidden;
+}
+.container {
+  width: 70%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rik {
+  width: 43em;
+  max-width: 46em;
+  margin: 0 auto;
+  position: relative;
+}
+.rik h1 {
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  display: inline-block;
+  color: rgb(67,4,4);
+}
+
+/*--------------
+  Navigation
+----------------*/
+nav {
+  /*overflow: hidden;
   border-top: 1px solid red;
   border-bottom: 1px solid red;
-  padding: 10px 0;
+  padding: 10px 0;*/
 }
+nav.menu {
+  font-family: "runda",sans-serif;
+  font-size: 1.6em;
+  font-weight: 700; 
+  text-align: center;
+  background-color: rgb(234,74,51);
+  padding: 70px 0 40px;
+}
+
+nav.menu a {
+  display: inline-block;
+  color: white;
+  margin: 0 30px;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+nav.menu a:hover {
+  opacity: 0.4;
+}
+
+nav.projects, nav.submenu {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3.2em;
+  color: rgb(67,4,4);
+  padding-top: 80px;
+}
+
+nav.projects a, nav.submenu a {
+  color: rgb(67,4,4);
+}
+nav.projects a:hover, nav.submenu a:hover {
+  color: rgb(168,10,10);
+}
+
+
+nav.projects hr, nav.submenu hr {
+  border: 0;
+  height: 1px;
+  background: rgb(67,4,4);
+  width: 18rem;
+  margin: 2rem auto;
+}
+
 nav li {
   list-style: none;
   margin-right: 20px;
-  font-weight: bold;
-  float: left;
+  font-family: "runda",sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
 }
 nav li a.active {
   color: red;
@@ -78,15 +197,15 @@ nav.submenu {
   margin-bottom: 20px;
 }
 nav.submenu a {
-  font-weight: normal;
+  /*font-weight: normal;*/
 }
 section.content {
-  margin-top: 40px;
+  margin-top: 2.4em;
 }
 footer {
   padding-top: 20px;
   margin-top: 20px;
-  border-top: 1px solid red;
+  /*border-top: 1px solid red;*/
   font-size: 13px;
   color: #222;
 }
