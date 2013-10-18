@@ -1,9 +1,0 @@
-﻿Title: Papa Came Home
-
-----
-
-Intro: Intro here
-
-----
-
-Text: More crap here.
