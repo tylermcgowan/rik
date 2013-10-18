@@ -1,12 +1,13 @@
 <?php snippet('header') ?>
-<?php snippet('rik') ?>
+<div class="gradient">
+	<div class="container">
+		<div class="row">
+			<?php snippet('rik') ?>
+			
+			<?php snippet('submenu') ?>
+			
+			<?php snippet('footer') ?>
+		</div>
+	</div>
+</div>
 
-<section class="content">
-
-  <article>
-  	<?php snippet('submenu') ?>
-  </article>
-
-</section>
-
-<?php snippet('footer') ?>
