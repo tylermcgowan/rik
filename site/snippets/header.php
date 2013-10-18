@@ -9,8 +9,12 @@
   <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <script type="text/javascript" src="//use.typekit.net/hqr2cot.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   <?php echo css('assets/styles/styles.css') ?>
+
 
 </head>
 
